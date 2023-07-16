@@ -1,0 +1,46 @@
+i {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+i.cart-plus {
+    background-image: url("../assets/icons/cart-plus.svg");
+}
+i.cart-cross {
+    background-image: url("../assets/icons/cart-cross.svg");
+}
+i.cart {
+    background-image: url("../assets/icons/cart.svg");
+}
+i.home{
+    background-image: url("../assets/icons/home.svg");
+}
+i.shop{
+    background-image: url("../assets/icons/shop.svg");
+}
+i.cart-minus {
+    background-image: url("../assets/icons/cart-minus.svg");
+}
+
+
+@keyframes disappearAnimation  {
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+i.slide.clicked {
+    animation: disappearAnimation 0.8s alternate;
+}
